@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>LCBD-Protfolio</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <!--<link href="assets/img/favicon.png" rel="icon">-->
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,500,500i,600,600i,700,700i&subset=cyrillic" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <main id="main">
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4 justify-content-center">
+
+          <div class="col-lg-9">
+            <div class="portfolio-details-slider swiper" style="background-color: aliceblue;">
+              <div class="swiper-wrapper align-items-center">
+                <div class="swiper-slide">
+                  <img src="../assets/img/portfolio/Unreal_Loa/HitEnermy.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="../assets/img/portfolio/Unreal_Loa/Montage.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="../assets/img/portfolio/Unreal_Loa/FollowEnermy.png" alt="">
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="row-lg-6">
+            <div class="portfolio-info">
+              <h1><strong>정보</strong></h1>
+              <ul>
+                <li><h3><strong>카테코리</strong>: 유튜브영상 따라만들어보기</h3></li>
+                <li><h3><strong></strong>따라오는 적과 타격 구현</h3></li>
+                <li><h3><strong>진행 날짜</strong>: 2024.02 ~ 2024.03</h3></li>
+                <li><h3><strong>참고 유튜브 링크</strong>: <a href="https://www.youtube.com/@Unrealasahobby/videos" target="_blank">https://www.youtube.com/@Unrealasahobby/videos</a></h3></li>
+              </ul>
+            </div>
+
+           <div class="col portfolio-details-container">
+            <div class="portfolio-details">
+              <h1>상세 내용</h1>
+              <p> 로스트아크의 게임로직을 구현해보고싶어, 친구1명과 같이 유튜브 영상을 따라 언리얼엔진으로 따라오는 적과 타격(연속공격)을 구현했습니다.</p>
+              
+              <hr>
+
+                <div class="portfolio-details-info">
+                  <div class="col-10">
+                    <h1>화면 설명</h1>
+                    <ul>
+                      <li><p>로스트아크 게임의 탑뷰방식을 위해 SpringArm을 45도정도 내려보는 방식으로 플레이어를 따라가게 하여 시선을 고정시킵니다. </p></li>
+                    </ul>
+                  </div>
+                  <div class="text-center">
+                    <img src="../assets/img/portfolio/Unreal_Loa/첫화면.png">
+                  </div>
+                  <div class="text-center">
+                    <img src="../assets/img/portfolio/Unreal_Loa/TopViewCamera.png">
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="portfolio-details-info">
+                  <h1> 움직임 </h1>
+                  <ul>
+                    <li><p>마우스 우클릭으로 해당좌표를 향해 바라보며 이동합니다.</p></li>
+                  </ul>
+                  <div class="text-center">
+                    <img src="../assets/img/portfolio/Unreal_Loa/Moving.png">
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="portfolio-details-info">
+                  <h1>애니메이션(몽타주)</h1>
+                  <ul>
+                    <li><p>애니메이션기능에 이펙트를 가능하게한 몽타주라는 기능을 활용하여 공격모션, 타격인정범위, 타격여부, 연속공격을 만들었습니다.</p></li>
+                    <li><p>펀치,발차기 등을 합쳐 여러 공격모션을 이어나오게 하여 하나의 콤보공격으로 보이게 하였습니다.</p></li>
+                  </ul>
+                  <div class="text-center">
+                    <img src="../assets/img/portfolio/Unreal_Loa/Montage.png">
+                  </div>
+                  <div class="text-center">
+                    <img src="../assets/img/portfolio/Unreal_Loa/Hit.png">
+                    <p>마우스 좌클릭으로 공격모션을 취하며, 화면에 빨강, 검정, 파랑색의 Sphere가 타격인정 범위를 표시합니다.</p>
+                  </div>
+                    
+                  <div class="text-center">
+                    <img src="../assets/img/portfolio/Unreal_Loa/HitEnermy.png">
+                    <p>해당 범위에 적이 타격을 맞게되면 네모난 박스로 Hit된 곳을 표시하며 적이 타격맞은 모션을 취합니다.</p>
+                  </div>
+
+                  <div class="text-center">
+                    <img src="../assets/img/portfolio/Unreal_Loa/AttackBluePrint.png">
+                    <p>몽타주 재생과 연속공격을 위한 블루프린트입니다.</p>
+                  </div>
+
+                  <div class="text-center">
+                    <img src="../assets/img/portfolio/Unreal_Loa/AttackBluePrint2.png">
+                    <p>공격시 Sphere를 표시하며, 적이 타격입었는지 확인하고 피격시 텍스트와 이펙트를 출력합니다.</p>
+                  </div>
+
+                  <hr>
+
+                  <h1>따라오는 적</h1>
+                  <ul>
+                    <li><p>따라오는 AI Enermy는 친구가 블랙보드로 구현했으며, 플레이어 뒤 선에 닿은 적이 플레이어를 추격하도록 했습니다.</p></li>
+                  </ul>
+                  <div class="text-center">
+                    <img src="../assets/img/portfolio/Unreal_Loa/FollowEnermy.png">
+                    <p></p>
+                  </div>
+                 
+            
+              </div> <!--portfolio-details End-->
+            </div><!--row portfolio-details-container End-->
+          </div> <!---->
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+ 
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>
