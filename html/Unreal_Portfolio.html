@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>LCBD-Protfolio</title>
+  <title>UnrealEngine-Portfolio</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -25,7 +25,12 @@
 
   <!-- Template Main CSS File -->
   <link href="../assets/css/style.css" rel="stylesheet">
-
+  <style>
+    body{
+      background-color: #e5e8e9ce; /* 배경색을 약간 어둡게 설정 */
+      color: #5a656e;
+    }
+  </style>
 </head>
 
 <body>
@@ -34,130 +39,141 @@
 
     <!-- ======= Portfolio Details Section ======= -->
     <section id="portfolio-details" class="portfolio-details">
-      <div class="container">
-
-        <div class="row gy-4 justify-content-center">
-
-          <div class="col-lg-9">
-            <div class="portfolio-details-slider swiper" style="background-color: aliceblue;">
-              <div class="swiper-wrapper align-items-center">
-                <div class="swiper-slide">
-                  <img src="../assets/img/portfolio/Unreal_Loa/HitEnermy.png" alt="">
+      <div class="container project-container">
+        <div class="row">
+          <h1><strong>프로젝트 정보</strong></h1>
+          <div class="portfolio-info d-flex">
+            <!-- Slider Section -->
+            <div class="col-lg-7">
+              <div class="portfolio-details-slider swiper" style="background-color: aliceblue;">
+                <div class="swiper-wrapper align-items-center">
+                  <div class="swiper-slide">
+                    <img src="../assets/img/portfolio/Unreal_Loa/PNG/HitEnermy.png" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../assets/img/portfolio/Unreal_Loa/PNG/Montage.png" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../assets/img/portfolio/Unreal_Loa/PNG/FollowEnermy.png" alt="">
+                  </div>
                 </div>
-
-                <div class="swiper-slide">
-                  <img src="../assets/img/portfolio/Unreal_Loa/Montage.png" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="../assets/img/portfolio/Unreal_Loa/FollowEnermy.png" alt="">
-                </div>
-
+                <div class="swiper-pagination"></div>
+              </div><br>
+              <div class="col-lg-10">
+                <ul>
+                  <li><h3><strong>카테고리</strong>: 유튜브 영상 따라 만들기</h3></li>
+                  <li><h3><strong>프로젝트명</strong>: 따라오는 적과 타격 구현</h3></li>
+                  <li><h3><strong>진행 날짜</strong>: 2024.02 ~ 2024.03</h3></li>
+                  <li><h3><strong>참고 유튜브 링크</strong>: <a href="https://www.youtube.com/@Unrealasahobby/videos" target="_blank">https://www.youtube.com/@Unrealasahobby/videos</a></h3></li>
+                </ul>
               </div>
-              <div class="swiper-pagination"></div>
+            </div>
+            <!-- Project Info Section -->
+            <div class="col-lg-5 project-info">
+              <div class="label"> 로스트아크의 게임 로직을 구현해보고 싶어, 친구와 함께 유튜브 영상을 참고하여 언리얼 엔진으로 따라오는 적과 타격(연속 공격)을 구현했습니다.</div> 
+              <div class="label"> 이 프로젝트를 통해 따라오는 AI와 콤보 공격의 기본 메커니즘을 익혔습니다.</div>
+              <hr>
+              <div class="info-row">
+                <div class="label">주요 기능:</div>
+                <div class="content">마우스 우클릭으로 해당 좌표를 향해 바라보며 이동하고, 좌클릭으로 연속적인 공격 모션을 취합니다. 콤보 공격 도중 공격이 끊기면 일정 시간이 지난 후 초기화됩니다.</div>
+              </div>
+              <div class="info-row">
+                <div class="label">참고 링크:</div>
+                <div class="content"><a href="https://www.youtube.com/@Unrealasahobby/videos" target="_blank">유튜브 채널 보기</a></div>
+              </div>
+              <div class="info-row">
+                <div class="label">사용 기술:</div>
+                <div class="content">Unreal Engine, Mixamo</div>
+              </div>
             </div>
           </div>
 
-          <div class="row-lg-6">
-            <div class="portfolio-info">
-              <h1><strong>정보</strong></h1>
-              <ul>
-                <li><h3><strong>카테코리</strong>: 유튜브영상 따라만들어보기</h3></li>
-                <li><h3><strong></strong>따라오는 적과 타격 구현</h3></li>
-                <li><h3><strong>진행 날짜</strong>: 2024.02 ~ 2024.03</h3></li>
-                <li><h3><strong>참고 유튜브 링크</strong>: <a href="https://www.youtube.com/@Unrealasahobby/videos" target="_blank">https://www.youtube.com/@Unrealasahobby/videos</a></h3></li>
-              </ul>
-            </div>
-
-           <div class="col portfolio-details-container">
+          <div class="col portfolio-details-container">
             <div class="portfolio-details">
               <h1>상세 내용</h1>
-              <p> 로스트아크의 게임로직을 구현해보고싶어, 친구1명과 같이 유튜브 영상을 따라 언리얼엔진으로 따라오는 적과 타격(연속공격)을 구현했습니다.</p>
-              
+              <p>로스트아크의 게임 로직을 구현해보고 싶어, 친구와 함께 유튜브 영상을 참고하여 언리얼 엔진으로 따라오는 적과 타격(연속 공격)을 구현했습니다.</p>
+
               <hr>
 
-                <div class="portfolio-details-info">
-                  <div class="col-10">
-                    <h1>화면 설명</h1>
-                    <ul>
-                      <li><p>로스트아크 게임의 탑뷰방식을 위해 SpringArm을 45도정도 내려보는 방식으로 플레이어를 따라가게 하여 시선을 고정시킵니다. </p></li>
-                    </ul>
-                  </div>
-                  <div class="text-center">
-                    <img src="../assets/img/portfolio/Unreal_Loa/첫화면.png">
-                  </div>
-                  <div class="text-center">
-                    <img src="../assets/img/portfolio/Unreal_Loa/TopViewCamera.png">
-                  </div>
+              <div class="portfolio-details-info">
+                <div class="col-10">
+                  <h1>화면 설명</h1>
+                  <ul>
+                    <li><p>로스트아크 게임의 탑뷰 방식을 위해 SpringArm을 45도 정도 내려보는 방식으로 플레이어를 따라가게 하여 시선을 고정시킵니다.</p></li>
+                  </ul>
+                </div>
+                <div class="text-center">
+                  <img src="../assets/img/portfolio/Unreal_Loa/PNG/첫화면.png">
+                </div>
+                <div class="text-center">
+                  <img src="../assets/img/portfolio/Unreal_Loa/PNG/TopViewCamera.png">
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="portfolio-details-info">
+                <h1> 움직임 </h1>
+                <ul>
+                  <li><p>마우스 우클릭으로 해당 좌표를 향해 바라보며 이동합니다.</p></li>
+                </ul>
+                <div class="text-center">
+                  <img src="../assets/img/portfolio/Unreal_Loa/GIF/Unreal_Moving.gif">
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="portfolio-details-info">
+                <h1>애니메이션(몽타주)</h1>
+                <ul>
+                  <li><p>캐릭터 3D 모델은 Mixamo에서 구해왔습니다.</p></li>
+                  <li><p>애니메이션 기능에 이펙트를 가능하게 한 몽타주라는 기능을 활용하여 공격 모션, 타격 인정 범위, 타격 여부, 연속 공격을 만들었습니다.</p></li>
+                  <li><p>하나의 펀치, 발차기 공격 등을 이어 붙여 하나의 콤보 공격으로 보이게 하였습니다. 공격이 중간에 끊기면 일정 시간이 지난 뒤에는 초기화됩니다.</p></li>
+                </ul>
+                <div class="text-center">
+                  <img src="../assets/img/portfolio/Unreal_Loa/GIF/Unreal_Ani.gif">
+                </div>
+                <div class="text-center">
+                  <img src="../assets/img/portfolio/Unreal_Loa/GIF/Unreal_ComboAttack.gif">
+                  <p>마우스 좌클릭으로 공격 모션을 취하며, 화면에 빨강, 검정, 파랑색의 Sphere가 타격 인정 범위를 표시합니다.</p>
+                  <p>마우스가 클릭된 월드 좌표를 가져와 캐릭터가 해당 방향으로 공격하며,<br>콤보 공격 도중 공격이 끊기면 콤보 공격을 초기화합니다.</p>
+                </div>
+                  
+                <div class="text-center">
+                  <img src="../assets/img/portfolio/Unreal_Loa/GIF/Unreal_EnermyAttack.gif">
+                  <p>해당 범위에 적이 타격을 맞게 되면 네모난 박스로 Hit된 곳을 표시하며 적이 타격 맞은 모션을 취합니다.</p>
+                </div>
+
+                <div class="text-center">
+                  <img src="../assets/img/portfolio/Unreal_Loa/PNG/AttackBluePrint.png">
+                  <p>몽타주 재생과 연속 공격을 위한 블루프린트입니다.</p>
+                </div>
+
+                <div class="text-center">
+                  <img src="../assets/img/portfolio/Unreal_Loa/PNG/AttackBluePrint2.png">
+                  <p>공격 시 Sphere를 표시하며, 적이 타격 입었는지 확인하고 피격 시 텍스트와 이펙트를 출력합니다.</p>
                 </div>
 
                 <hr>
 
-                <div class="portfolio-details-info">
-                  <h1> 움직임 </h1>
-                  <ul>
-                    <li><p>마우스 우클릭으로 해당좌표를 향해 바라보며 이동합니다.</p></li>
-                  </ul>
-                  <div class="text-center">
-                    <img src="../assets/img/portfolio/Unreal_Loa/Moving.png">
-                  </div>
+                <h1>따라오는 적</h1>
+                <ul>
+                  <li><p>따라오는 AI Enermy는 친구가 블랙보드로 구현했으며, 플레이어 뒤 선에 닿은 적이 플레이어를 추격하도록 했습니다.</p></li>
+                </ul>
+                <div class="text-center">
+                  <img src="../assets/img/portfolio/Unreal_Loa/GIF/Unreal_EnermyFollow.gif">
+                  <p></p>
                 </div>
-
-                <hr>
-
-                <div class="portfolio-details-info">
-                  <h1>애니메이션(몽타주)</h1>
-                  <ul>
-                    <li><p>애니메이션기능에 이펙트를 가능하게한 몽타주라는 기능을 활용하여 공격모션, 타격인정범위, 타격여부, 연속공격을 만들었습니다.</p></li>
-                    <li><p>펀치,발차기 등을 합쳐 여러 공격모션을 이어나오게 하여 하나의 콤보공격으로 보이게 하였습니다.</p></li>
-                  </ul>
-                  <div class="text-center">
-                    <img src="../assets/img/portfolio/Unreal_Loa/Montage.png">
-                  </div>
-                  <div class="text-center">
-                    <img src="../assets/img/portfolio/Unreal_Loa/Hit.png">
-                    <p>마우스 좌클릭으로 공격모션을 취하며, 화면에 빨강, 검정, 파랑색의 Sphere가 타격인정 범위를 표시합니다.</p>
-                  </div>
-                    
-                  <div class="text-center">
-                    <img src="../assets/img/portfolio/Unreal_Loa/HitEnermy.png">
-                    <p>해당 범위에 적이 타격을 맞게되면 네모난 박스로 Hit된 곳을 표시하며 적이 타격맞은 모션을 취합니다.</p>
-                  </div>
-
-                  <div class="text-center">
-                    <img src="../assets/img/portfolio/Unreal_Loa/AttackBluePrint.png">
-                    <p>몽타주 재생과 연속공격을 위한 블루프린트입니다.</p>
-                  </div>
-
-                  <div class="text-center">
-                    <img src="../assets/img/portfolio/Unreal_Loa/AttackBluePrint2.png">
-                    <p>공격시 Sphere를 표시하며, 적이 타격입었는지 확인하고 피격시 텍스트와 이펙트를 출력합니다.</p>
-                  </div>
-
-                  <hr>
-
-                  <h1>따라오는 적</h1>
-                  <ul>
-                    <li><p>따라오는 AI Enermy는 친구가 블랙보드로 구현했으며, 플레이어 뒤 선에 닿은 적이 플레이어를 추격하도록 했습니다.</p></li>
-                  </ul>
-                  <div class="text-center">
-                    <img src="../assets/img/portfolio/Unreal_Loa/FollowEnermy.png">
-                    <p></p>
-                  </div>
-                 
-            
-              </div> <!--portfolio-details End-->
-            </div><!--row portfolio-details-container End-->
-          </div> <!---->
+               
+          
+            </div> <!--portfolio-details End-->
+          </div><!--row portfolio-details-container End-->
         </div>
-
       </div>
     </section><!-- End Portfolio Details Section -->
 
   </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
- 
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 

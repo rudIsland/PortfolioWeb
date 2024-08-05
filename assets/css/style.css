@@ -860,6 +860,23 @@ section {
   padding-top: 40px;
 }
 
+.portfolio-info ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.portfolio-info ul li {
+  margin-bottom: 10px;
+}
+
+.portfolio-details-slider {
+  margin-right: 20px; /* 슬라이더와 텍스트 사이의 간격 추가 */
+}
+
+.portfolio-details-container {
+  margin-top: 40px;
+}
+
 .portfolio-details .portfolio-details-slider img {
   max-width: 100%;
   height: auto; /* Maintain aspect ratio */
@@ -942,6 +959,40 @@ section {
   height: 600px; /*없던건데 만듬*/
   padding-top: 20px;
   object-fit: contain; /* 이미지가 비율을 유지하면서 부모 요소를 완전히 채우도록 설정 */
+}
+
+.project-container {
+  background-color: #ffffff; /* 컨테이너의 배경을 밝게 설정 */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  gap: 25px; /* 각 항목 사이의 간격 */
+  font-size: 16pt;
+}
+
+
+.project-info .info-row {
+  display: flex;
+}
+
+.project-info .info-row .label {
+  flex: 0 0 120px; /* 레이블 너비를 고정 */
+  font-weight: bold;
+}
+
+.project-info .info-row .content {
+  flex: 1;
+}
+
+
+.portfolio-info .swiper {
+  margin-right: 30px; /* 슬라이더와 텍스트 사이의 간격 추가 */
 }
 
 /* 모달 팝업 창*/
