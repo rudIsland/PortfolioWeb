@@ -982,7 +982,7 @@ section {
 }
 
 .project-info .info-row .label {
-  flex: 0 0 120px; /* 레이블 너비를 고정 */
+  flex: 0 0 150px; /* 레이블 너비를 고정 */
   font-weight: bold;
 }
 
