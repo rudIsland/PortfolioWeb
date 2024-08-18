@@ -1087,7 +1087,7 @@ body.modal-open {
 
 
 .otherProject-info {
-  width: 70%; /* 정보 섹션 너비 고정 */
+  width: 60%; /* 정보 섹션 너비 고정 */
   display: flex;
   flex-direction: column;
 }
