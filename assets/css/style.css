@@ -137,7 +137,7 @@ h6 {
 .navbar a:hover,
 .navbar .active,
 .navbar .active:focus,
-.navbar li:hover>a {
+.navbar li:hover > a {
   color: #83c6e6;
 }
 
@@ -172,11 +172,11 @@ h6 {
 
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
-.navbar .dropdown ul li:hover>a {
+.navbar .dropdown ul li:hover > a {
   color: #83c6e6;
 }
 
-.navbar .dropdown:hover>ul {
+.navbar .dropdown:hover > ul {
   opacity: 1;
   visibility: visible;
 }
@@ -187,7 +187,7 @@ h6 {
   visibility: hidden;
 }
 
-.navbar .dropdown .dropdown:hover>ul {
+.navbar .dropdown .dropdown:hover > ul {
   opacity: 1;
   top: 0;
   left: 100%;
@@ -199,7 +199,7 @@ h6 {
     left: -90%;
   }
 
-  .navbar .dropdown .dropdown:hover>ul {
+  .navbar .dropdown .dropdown:hover > ul {
     left: -100%;
   }
 }
@@ -271,7 +271,7 @@ h6 {
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
-.navbar-mobile li:hover>a {
+.navbar-mobile li:hover > a {
   color: #83c6e6;
 }
 
@@ -306,11 +306,11 @@ h6 {
 
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
-.navbar-mobile .dropdown ul li:hover>a {
+.navbar-mobile .dropdown ul li:hover > a {
   color: #83c6e6;
 }
 
-.navbar-mobile .dropdown>.dropdown-active {
+.navbar-mobile .dropdown > .dropdown-active {
   display: block;
 }
 
@@ -434,11 +434,11 @@ section {
   font-size: 14px;
 }
 
-.breadcrumbs ol li+li {
+.breadcrumbs ol li + li {
   padding-left: 10px;
 }
 
-.breadcrumbs ol li+li::before {
+.breadcrumbs ol li + li::before {
   display: inline-block;
   padding-right: 10px;
   color: #6c757d;
@@ -578,8 +578,7 @@ section {
   background-color: #83c6e6;
 }
 
-
-.skills_Box{
+.skills_Box {
   width: 400px;
   height: 640px;
   margin: 20px;
@@ -589,12 +588,12 @@ section {
   text-align: center;
 }
 
-.skills_Box_Title{
-  font-size:30pt;
+.skills_Box_Title {
+  font-size: 30pt;
   font-weight: 600;
 }
 
-.skills_Box img{
+.skills_Box img {
   margin: 2px;
 }
 
@@ -689,7 +688,6 @@ section {
   background: #83c6e6;
   height: 100%;
   border-radius: 0px;
-  
 }
 
 .Advantage .icon {
@@ -738,7 +736,6 @@ section {
 .Advantage .icon-box:hover .icon i {
   color: #83c6e6;
 }
-
 
 @media (max-width: 768px) {
   .Advantage .icon-box::before {
@@ -796,10 +793,10 @@ section {
   text-decoration: none; /* 추가 */
 }
 
-.portfolio .portfolio-wrap img{
-   height: 300px; /* 원하는 높이로 설정 */
-   width: 100%; /* 폭을 100%로 설정하여 부모 요소에 맞춤 */
-   object-fit: cover; /* 이미지가 비율을 유지하면서 부모 요소를 완전히 채우도록 설정 */
+.portfolio .portfolio-wrap img {
+  height: 300px; /* 원하는 높이로 설정 */
+  width: 100%; /* 폭을 100%로 설정하여 부모 요소에 맞춤 */
+  object-fit: cover; /* 이미지가 비율을 유지하면서 부모 요소를 완전히 채우도록 설정 */
 }
 
 .portfolio .portfolio-wrap::before {
@@ -851,8 +848,6 @@ section {
   top: calc(50% - 48px);
 }
 
-
-
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
@@ -889,7 +884,10 @@ section {
   position: relative;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+.portfolio-details
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: #fff;
@@ -897,7 +895,10 @@ section {
   border: 1px solid #83c6e6;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+.portfolio-details
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet-active {
   background-color: #83c6e6;
 }
 
@@ -926,7 +927,7 @@ section {
   font-size: 30px;
 }
 
-.portfolio-details .portfolio-info ul li+li {
+.portfolio-details .portfolio-info ul li + li {
   margin-top: 10px;
 }
 
@@ -944,18 +945,17 @@ section {
   padding: 0;
 }
 
-
-.portfolio-details p{
+.portfolio-details p {
   padding-top: 10px;
   font-size: 20pt;
 }
 
-.portfolio-details-info h1{
+.portfolio-details-info h1 {
   padding-top: 20px;
 }
 
-.portfolio-details-info img{
-  width:80%;
+.portfolio-details-info img {
+  width: 80%;
   height: 600px; /*없던건데 만듬*/
   padding-top: 20px;
   object-fit: contain; /* 이미지가 비율을 유지하면서 부모 요소를 완전히 채우도록 설정 */
@@ -976,7 +976,6 @@ section {
   font-size: 16pt;
 }
 
-
 .project-info .info-row {
   display: flex;
 }
@@ -989,7 +988,6 @@ section {
 .project-info .info-row .content {
   flex: 1;
 }
-
 
 .portfolio-info .swiper {
   margin-right: 30px; /* 슬라이더와 텍스트 사이의 간격 추가 */
@@ -1066,8 +1064,9 @@ body.modal-open {
   margin-top: 20px;
 }
 
-.modal-iframe{
-  width: 100%; height: 80vh;
+.modal-iframe {
+  width: 100%;
+  height: 80vh;
 }
 
 /*---------------Other Project----------------------*/
@@ -1084,7 +1083,6 @@ body.modal-open {
   height: 250px;
   padding-right: 30px;
 }
-
 
 .otherProject-info {
   width: 60%; /* 정보 섹션 너비 고정 */
@@ -1118,9 +1116,6 @@ body.modal-open {
 .description-section {
   padding-top: 10px;
 }
-
-
-
 
 /*--------------------------------------------------------------
 # Testimonials
@@ -1283,7 +1278,7 @@ body.modal-open {
   font-weight: 600;
 }
 
-.contact .php-email-form .error-message br+br {
+.contact .php-email-form .error-message br + br {
   margin-top: 25px;
 }
 
@@ -1327,7 +1322,7 @@ body.modal-open {
   border-color: #83c6e6;
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .php-email-form button[type="submit"] {
   background: #83c6e6;
   border: 0;
   padding: 10px 24px;
@@ -1336,7 +1331,7 @@ body.modal-open {
   border-radius: 50px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .php-email-form button[type="submit"]:hover {
   background: #83c6e6;
 }
 
