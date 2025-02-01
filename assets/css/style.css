@@ -1,8 +1,17 @@
+/* ✅ 전체적인 가로 스크롤 방지 */
+html,
 body {
+  overflow-x: hidden; /* 가로 스크롤 완전 차단 */
+  max-width: 100%;
   font-family: "Open Sans", sans-serif;
   color: #5a656e;
 }
 
+/* ✅ 모든 요소가 부모 컨테이너를 넘지 않도록 설정 */
+* {
+  box-sizing: border-box; /* 요소 크기 계산을 padding과 border까지 포함 */
+  max-width: 100%;
+}
 a {
   color: #83c6e6;
   text-decoration: none;
@@ -40,7 +49,7 @@ h6 {
 }
 
 .back-to-top i {
-  font-size: 24px;
+  font-size: 20px;
   color: #fff;
   line-height: 0;
 }
@@ -62,17 +71,17 @@ h6 {
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
-  height: 60px;
+  height: 50px;
   background: #fff;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.12);
 }
 
 #header .logo h1 {
-  font-size: 26px;
+  font-size: 20px;
   margin: 0;
   padding: 6px 0;
   line-height: 1;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 3px;
   text-transform: uppercase;
 }
@@ -87,6 +96,10 @@ h6 {
   padding: 0;
   margin: 0;
   max-height: 40px;
+}
+
+#header .navbar a {
+  font-size: 12px;
 }
 
 .scrolled-offset {
@@ -121,7 +134,7 @@ h6 {
   align-items: center;
   justify-content: space-between;
   padding: 10px 0 10px 30px;
-  font-size: 14px;
+  font-size: 18px;
   color: #2c4964;
   white-space: nowrap;
   transition: 0.3s;
@@ -209,7 +222,7 @@ h6 {
 */
 .mobile-nav-toggle {
   color: #2c4964;
-  font-size: 28px;
+  font-size: 20px;
   cursor: pointer;
   display: none;
   line-height: 0;
@@ -388,12 +401,19 @@ section {
 }
 
 .section-title h2 {
-  font-size: 32px;
+  font-size: 20px;
   font-weight: bold;
   margin-bottom: 15px;
   padding-bottom: 15px;
   position: relative;
   color: #345676;
+}
+
+.section-title h3 {
+  font-size: 16px;
+}
+.section-title h4 {
+  font-size: 14px;
 }
 
 .section-title h2::after {
@@ -409,6 +429,7 @@ section {
 
 .section-title p {
   margin-bottom: 0;
+  font-size: 12px;
 }
 
 /*--------------------------------------------------------------
@@ -546,7 +567,7 @@ section {
 /*--------------------------------------------------------------
 # Skills
 --------------------------------------------------------------*/
-.skills .progress {
+skills .progress {
   height: 50px;
   display: block;
   background: none;
@@ -579,9 +600,9 @@ section {
 }
 
 .skills_Box {
-  width: 400px;
-  height: 640px;
-  margin: 20px;
+  width: 260px;
+  height: 350px;
+  margin: 5px;
   box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.2);
   transition: all 0.3s ease-in-out;
   border-radius: 8px;
@@ -589,19 +610,42 @@ section {
 }
 
 .skills_Box_Title {
-  font-size: 30pt;
+  font-size: 16pt;
   font-weight: 600;
 }
 
+/* ✅ 이미지 크기를 균일하게 조정 */
 .skills_Box img {
-  margin: 2px;
+  width: 75px; /* 크기 증가 */
+  height: 75px;
+  object-fit: contain; /* 비율 유지 */
+  margin: 5px;
+}
+
+.skills_Box div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* 중앙 정렬 */
+  gap: 5px;
+}
+
+/* ✅ 반응형 조정 */
+@media (max-width: 768px) {
+  .skills_Box {
+    width: 180px;
+    height: 300px;
+  }
+
+  .skills_Box img {
+    height: 40px; /* 모바일에서 이미지 높이 조정 */
+  }
 }
 
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
 .resume .resume-title {
-  font-size: 26px;
+  font-size: 20px;
   font-weight: 500;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -609,8 +653,13 @@ section {
   font-family: "Poppins", sans-serif;
 }
 
+/* ✅ 이미지 크기도 60%로 조정 */
+img {
+  height: 240px;
+}
+
 .resume .resume-item {
-  padding: 0 0 20px 20px;
+  padding: 0 0 16px 16px;
   margin-top: -2px;
   border-left: 2px solid #83c6e6;
   position: relative;
@@ -618,28 +667,32 @@ section {
 
 .resume .resume-item h4 {
   line-height: 18px;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 600;
   color: #2c4964;
   margin-bottom: 10px;
 }
 
 .resume .resume-item h5 {
-  font-size: 16px;
+  font-size: 12px;
   background: #e4ebf3;
   padding: 5px 15px;
   display: inline-block;
-  font-weight: 400;
+  font-weight: 200;
   margin-bottom: 10px;
   font-family: "Poppins", sans-serif;
 }
 
 .resume .resume-item ul {
   padding-left: 20px;
+  font-size: 12px;
 }
-
+.resume .resume-item p {
+  font-size: 12px;
+}
 .resume .resume-item ul li {
   padding-bottom: 10px;
+  font-size: 12px;
 }
 
 .resume .resume-item:last-child {
@@ -661,14 +714,23 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+.Advantage {
+  padding: 30px 0; /* 기존 대비 60% 축소 */
+}
+
+/* ✅ 컨테이너 크기 조정 */
+.Advantage .container {
+  max-width: 1100px; /* 기존 1200px → 900px (줄임) */
+}
+
 .Advantage .icon-box {
-  padding: 20px 15px;
+  padding: 15px 10px;
   position: relative;
   overflow: hidden;
   background: #fff;
   box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.2);
   transition: all 0.3s ease-in-out;
-  border-radius: 8px;
+  border-radius: 3px;
   text-align: center;
   z-index: 1;
 }
@@ -711,7 +773,7 @@ section {
 .Advantage .title {
   font-weight: 700;
   margin-bottom: 15px;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .Advantage .title a {
@@ -719,7 +781,7 @@ section {
 }
 
 .Advantage .description {
-  font-size: 15px;
+  font-size: 12px;
   line-height: 24px;
   margin-bottom: 0;
 }
@@ -746,17 +808,30 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+.badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #ff5733; /* 빨간색 배경 */
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  z-index: 10;
+}
+
 .portfolio .portfolio-item {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .portfolio #portfolio-flters {
   padding: 0;
-  margin: 0 auto 35px auto;
+  margin: 0 auto 20px auto;
   list-style: none;
   text-align: center;
   background: #fff;
-  border-radius: 50px;
+  border-radius: 30px;
   padding: 2px 15px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.08);
 }
@@ -765,7 +840,7 @@ section {
   cursor: pointer;
   display: inline-block;
   padding: 10px 15px 8px 15px;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
   line-height: 1;
   text-transform: uppercase;
@@ -794,7 +869,7 @@ section {
 }
 
 .portfolio .portfolio-wrap img {
-  height: 300px; /* 원하는 높이로 설정 */
+  height: 250px; /* 원하는 높이로 설정 */
   width: 100%; /* 폭을 100%로 설정하여 부모 요소에 맞춤 */
   object-fit: cover; /* 이미지가 비율을 유지하면서 부모 요소를 완전히 채우도록 설정 */
 }
@@ -824,7 +899,7 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-info h4 {
-  font-size: 20px;
+  font-size: 16px;
   color: #fff;
   font-weight: 600;
 }
@@ -852,7 +927,7 @@ section {
 # Portfolio Details
 --------------------------------------------------------------*/
 .portfolio-details {
-  padding-top: 40px;
+  padding-top: 10px;
 }
 
 .portfolio-info ul {
@@ -869,7 +944,7 @@ section {
 }
 
 .portfolio-details-container {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .portfolio-details .portfolio-details-slider img {
@@ -903,7 +978,7 @@ section {
 }
 
 .portfolio-details .portfolio-info {
-  padding: 30px;
+  padding: 20px;
   box-shadow: 0px 0 30px rgba(44, 73, 100, 0.08);
 }
 
@@ -964,7 +1039,7 @@ section {
 .project-container {
   background-color: #ffffff; /* 컨테이너의 배경을 밝게 설정 */
   border-radius: 10px;
-  padding: 20px;
+  padding: 0px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-top: 20px;
 }
@@ -994,7 +1069,7 @@ section {
 }
 
 /* 모달 팝업 창*/
-.modal {
+/* .modal {
   display: none;
   position: fixed;
   z-index: 9999;
@@ -1059,7 +1134,7 @@ body.modal-open {
 
 #modalDetails iframe {
   width: 100%;
-  height: 80vh; /* Adjust for padding and title */
+  height: 80vh; /* Adjust for padding and title 
   border: none;
   margin-top: 20px;
 }
@@ -1067,25 +1142,120 @@ body.modal-open {
 .modal-iframe {
   width: 100%;
   height: 80vh;
+} 전 모달 스타일*/
+
+/* =================== 모달 팝업 창 =================== */
+/* 모달 전체 배경 */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* 배경 어둡게 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
+/* 모달 컨텐츠 */
+.modal-content {
+  background-color: white;
+  max-width: 1200px; /* 가로 너비 */
+  width: 90%;
+  max-height: 90vh; /* 세로 높이 */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  overflow-y: auto; /* 내부 스크롤 */
+  overflow-x: hidden; /* 가로 스크롤 방지 */
+}
+
+/* iframe이 내용 전체를 차지하도록 설정 */
+.modal-iframe {
+  flex-grow: 1; /* 자동 확장 */
+  width: 100%;
+  height: 80vh; /* 적절한 높이 설정 */
+  border: none;
+}
+
+/* 모달 제목 영역 */
+.modal-header {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* 내부 스크롤 가능하도록 설정 */
+.modal-body {
+  flex-grow: 1; /* 가변적인 높이 */
+  max-height: 70vh; /* 화면 높이의 70%까지만 확장 */
+  overflow-y: auto; /* 내부 스크롤 */
+  padding: 10px;
+}
+
+/* 닫기 버튼 */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  background: none;
+  border: none;
+  transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+  color: red;
+}
+
+/* body 스크롤 방지 */
+body.modal-open {
+  overflow: hidden;
+}
+
+#modalPopup {
+  display: none; /* 기본적으로 숨김 */
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
 /*---------------Other Project----------------------*/
 
 .otherProject {
   display: flex;
   align-items: flex-start;
-  width: 1200px; /* 전체 컨테이너 너비 고정 */
+  width: 900px; /* 전체 컨테이너 너비 고정 */
   padding-bottom: 5%;
 }
 
 .image-section {
-  width: 30%; /* 이미지 섹션 내에서 이미지가 가득 차도록 설정 */
-  height: 250px;
-  padding-right: 30px;
+  width: 25%; /* 이미지 섹션 내에서 이미지가 가득 차도록 설정 */
+  height: 180px;
+  padding-right: 20px;
+}
+
+.image-section p {
+  font-size: 14px;
 }
 
 .otherProject-info {
-  width: 60%; /* 정보 섹션 너비 고정 */
+  width: 70%; /* 정보 섹션 너비 고정 */
   display: flex;
   flex-direction: column;
 }
@@ -1095,6 +1265,7 @@ body.modal-open {
 }
 
 .otherProject-section {
+  font-size: 18px; /* 기존 크기보다 줄임 */
   width: 300%;
   padding-bottom: 10px;
 }
@@ -1102,18 +1273,22 @@ body.modal-open {
 .info-row {
   display: flex;
   margin-bottom: 5px;
+  font-size: 14px; /* 기존보다 축소 */
 }
 
 .other-label {
   font-weight: bold;
   width: 100px; /* 라벨 너비 고정 */
+  font-size: 13px;
 }
 
 .other-content {
   flex: 1; /* 남은 공간을 컨텐츠가 차지 */
+  font-size: 13px; /* 기존보다 축소 */
 }
 
 .description-section {
+  font-size: 14px; /* 기존보다 작게 */
   padding-top: 10px;
 }
 

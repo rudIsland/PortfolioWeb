@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>UnrealEngine-Portfolio</title>
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <!-- 프로젝트 전용 CSS -->
+    <link rel="stylesheet" href="../assets/css/portfolio.css" />
+
+    <style>
+      body {
+        background-color: #e5e8e9ce; /* 배경색을 약간 어둡게 설정 */
+        color: #5a656e;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="content-container">
+      <h1>🎮 Unreal Engine 기반 액션 게임 개발</h1>
+
+      <div class="project-info">
+        <p class="highlight-box">
+          <strong>진행 기간:</strong> 2024.02 ~ 2024.03
+        </p>
+        <p class="highlight-box">
+          <strong>내 역할:</strong> 캐릭터 동작 및 공격 로직 구현
+        </p>
+        <p class="highlight-box"><strong>팀원 수:</strong> 2명</p>
+        <p>
+          로스트아크의 게임 로직을 참고하여 언리얼 엔진으로 따라오는 적과
+          타격(연속 공격) 기능을 구현했습니다. AI 적의 추격 로직과 콤보 공격
+          시스템을 개발하며 언리얼 블루프린트의 이해도를 높였습니다.
+        </p>
+      </div>
+
+      <h2>📌 주요 기능</h2>
+      <ul>
+        <li>⚔️ 마우스 클릭으로 연속 공격 및 콤보 시스템 구현</li>
+        <li>🎯 AI 적의 플레이어 추격 및 타격 반응 기능</li>
+        <li>🌀 언리얼 몽타주를 활용한 공격 애니메이션 및 피격 이펙트 적용</li>
+      </ul>
+
+      <h2>🔗 관련 링크</h2>
+      <div class="link-container">
+        <a
+          href="https://www.youtube.com/@Unrealasahobby/videos"
+          target="_blank"
+        >
+          <img
+            src="../assets/img/icon/Youtube.jpg"
+            alt="YouTube"
+            class="icon"
+          />
+          참고한 유튜브 링크
+        </a>
+      </div>
+
+      <h2>📌 개발하며 느낀 점</h2>
+      <div class="feedback-container">
+        <p>
+          언리얼 엔진으로 개발되는 추세로 이를 따라가고자 경험삼아 입문겸 해본
+          프로젝트였습니다. 이 개발을 통해 블루프린트의 개발경험을 쌓을 수
+          있었고, 개인적으로 유니티 엔진의 애니메이션에 비해 언리얼의
+          애니메이션은 매우 자연스러운 연출과 기능을 추가하기에 사용자
+          친화적으로 느껴졌습니다.
+        </p>
+      </div>
+
+      <h2>📸 스크린샷</h2>
+      <div class="slider-container">
+        <div
+          class="portfolio-details-slider swiper"
+          style="background-color: aliceblue"
+        >
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide">
+              <img
+                src="../assets/img/portfolio/Unreal_Loa/PNG/HitEnermy.png"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="../assets/img/portfolio/Unreal_Loa/PNG/Montage.png"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="../assets/img/portfolio/Unreal_Loa/PNG/FollowEnermy.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+      <!-- portfolio.js 연결 -->
+      <script src="../assets/js/portfolio.js"></script>
+    </div>
+  </body>
+</html>

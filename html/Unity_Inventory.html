@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Unity_Inventory-Portfolio</title>
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <!-- 프로젝트 전용 CSS -->
+    <link rel="stylesheet" href="../assets/css/portfolio.css" />
+
+    <style>
+      body {
+        background-color: #e5e8e9ce; /* 배경색을 약간 어둡게 설정 */
+        color: #5a656e;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="content-container">
+      <h1>🎮 Unity 인벤토리 및 캐릭터 시스템</h1>
+
+      <div class="project-info">
+        <p class="highlight-box">
+          <strong>진행 기간:</strong> 2023.12 ~ 2024.02
+        </p>
+        <p class="highlight-box">
+          <strong>내 역할:</strong> 캐릭터 움직임, 기상기, 아이템 인벤토리
+          시스템 구현
+        </p>
+        <p class="highlight-box"><strong>개발 방식:</strong> 싱글 개발</p>
+        <p>
+          로스트아크 캐릭터의 움직임과 아이템 인벤토리 시스템을 Unity를 활용하여
+          개발했습니다. 캐릭터의 다양한 애니메이션과 인터랙션을 구현하고,
+          인벤토리 기능을 통해 아이템 관리의 편의성을 강화했습니다.
+        </p>
+      </div>
+
+      <h2>📌 주요 기능</h2>
+      <ul>
+        <li>🎯 캐릭터 줌인/줌아웃 및 움직임 애니메이션 구현</li>
+        <li>🌀 넘어짐 및 구르기 모션과 기상 애니메이션 기능</li>
+        <li>🎒 아이템 습득, 중복 처리, 인벤토리 내 아이템 이동 기능</li>
+      </ul>
+
+      <h2>🔗 관련 링크</h2>
+      <div class="link-container">
+        <a href="https://github.com/rudIsland/MiniLoa" target="_blank">
+          <img
+            src="../assets/img/icon/GithubImg.jpg"
+            alt="GitHub"
+            class="icon"
+          />
+          GitHub 링크
+        </a>
+      </div>
+
+      <h2>📌 개발하며 느낀 점</h2>
+      <div class="feedback-container">
+        <p>
+          비록 완성도있는 결과물은 아니였지만 애니메이션간 자연스러운 모션을
+          위한 구현의 어려움과 해결방안을 생각할 수 있던 프로젝트였습니다.
+          사용된 3D모델의 리깅문제와 셰이더를 입히지 못해, 더이상 진행하지
+          못했지만 이를 경험삼아 좀 더 개선된 애니메이션 연출과 아이템 및
+          인벤토리 시스템을 구현할 것 입니다.
+        </p>
+      </div>
+
+      <h2>📸 스크린샷</h2>
+      <div class="slider-container">
+        <div
+          class="portfolio-details-slider swiper"
+          style="background-color: aliceblue"
+        >
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide">
+              <img
+                src="../assets/img/portfolio/Unity_Inventory/PNG/Unity_첫화면.png"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="../assets/img/portfolio/Unity_Inventory/PNG/Unity_Character.png"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="../assets/img/portfolio/Unity_Inventory/PNG/Unity_Item.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+      <!-- portfolio.js 연결 -->
+      <script src="../assets/js/portfolio.js"></script>
+    </div>
+  </body>
+</html>

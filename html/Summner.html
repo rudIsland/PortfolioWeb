@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>SUMMONER 프로젝트</title>
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <!-- 프로젝트 전용 CSS -->
+    <link rel="stylesheet" href="../assets/css/portfolio.css" />
+  </head>
+
+  <body>
+    <div class="content-container">
+      <h1>🎮 SUMMONER - 2D 턴제 전략 전투 게임</h1>
+
+      <div class="project-info">
+        <p class="highlight-box">
+          <strong>진행 기간:</strong> 2024.9 ~ 2024.12
+        </p>
+        <p class="highlight-box">
+          <strong>내 역할:</strong> 메인 프로그래머(전반적인 코드 틀 구현), 스토리 연출 ,UI 및 전투 기능 구현
+        </p>
+        <p class="highlight-box">
+          <strong>팀원 수:</strong> 3명
+        </p>
+        <p>
+          Summoner는 캡스톤 디자인 강의 주제로 게임제작을 통해 개발하게 되었습니다. <br>
+          적과의 단순한 전투가 아닌 혼합전략 알고리즘을 탑재하여 여러 전략을 펼칠 수 있는 턴제 전투 게임입니다.
+        </p>
+      </div>
+
+      <h2>📌 주요 기능</h2>
+      <ul>
+        <li>🧠 능동적인 전투를 위한 혼합전략 AI 알고리즘</li>
+        <li>⚔️ 다양한 공격 유형 및 전략적 전투 시스템</li>
+        <li>📖 스토리 진행 및 스테이지 저장 기능</li>
+      </ul>
+
+      <h2>🔗 관련 링크</h2>
+      <div class="link-container">
+        <a href="https://github.com/LEI-2812/SUMMONER_Repo" target="_blank">
+          <img src="../assets/img/icon/GithubImg.jpg" alt="GitHub" class="icon" />
+          GitHub 링크
+        </a>
+        <a href="https://lei2812.notion.site/dbd8b6d357e040a8a4b263a3a2352243?v=a0360b83941b46b5a3f22c8a656c2d82" target="_blank">
+          <img src="../assets/img/icon/NotionImg.jpg" alt="Notion" class="icon" />
+          노션 링크
+        </a>
+      </div>
+
+      <h2>📌 개발하며 느낀 점</h2>
+      <div class="feedback-container">
+        <p>
+          이 프로젝트를 진행하며 State패턴으로 공격 방식들을 체계적으로 정의하고 소환수들에게 해당 공격 정보를
+          동적으로 연결해줌으로서, 디자인 패턴을 적용한 코드 설계의 중요성을 깊이 깨달았습니다.
+          또한, 혼합전략 알고리즘을 적용하면서 전략적인 플레이를 위한 다양한 가능성을 보았고, 보다 깊이있는
+          게임 설계를 구현할 수 있었습니다.
+        </p>
+      </div>
+
+      <h2>📸 스크린샷</h2>
+      <div class="slider-container"> <!-- 슬라이더 크기 제한할 컨테이너 -->
+        <div class="portfolio-details-slider swiper" style="background-color: aliceblue">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide">
+              <img src="../assets/img/portfolio/서머너/서머너메인화면이미지.png" alt=""/>
+            </div>
+            <div class="swiper-slide">
+              <img src="../assets/img/portfolio/서머너/스테이지씬.jpg" alt=""/>
+            </div>
+            <div class="swiper-slide">
+              <img src="../assets/img/portfolio/서머너/스토리씬.png" alt=""/>
+            </div>
+            <div class="swiper-slide">
+              <img src="../assets/img/portfolio/서머너/서머너배틀화면이미지.png" alt=""/>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- portfolio.js 연결 -->
+    <script src="../assets/js/portfolio.js"></script>
+  </body>
+</html>
