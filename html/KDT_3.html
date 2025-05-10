@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>KDT Project3 Portfolio Details</title>
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <!-- 프로젝트 전용 CSS -->
+    <link rel="stylesheet" href="../assets/css/portfolio.css" />
+
+    <style>
+      body {
+        background-color: #e5e8e9ce; /* 배경색을 약간 어둡게 설정 */
+        color: #5a656e;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="content-container">
+      <h1>웹 쇼핑몰 홈페이지 제작</h1>
+
+      <div class="project-info">
+        <p class="highlight-box">
+          <strong>진행 기간:</strong> 2025.01.16 ~ 2025.02.13
+        </p>
+        <p class="highlight-box">
+          <strong>내 역할:</strong> 데이터베이스 설계 및 Server 구현
+        </p>
+        <p class="highlight-box"><strong>팀원 수:</strong> 5명</p>
+        <p class="highlight-box"><strong>최종결과:</strong> 2등</p>
+        <p>
+          쇼핑몰은 온라인에서 제품을 판매하고 구매하는 대표적인 웹 애플리케이션
+          중 하나입니다. </br>웹 개발을 학습하면서 다양한 기능을 종합적으로 활용할 수
+          있는 프로젝트를 구상하던 중 쇼핑몰이 가장 적합한 주제라고
+          판단했습니다. 쇼핑몰 개발을 통해서 사용자 인증, 데이터베이스 연동, API
+          활용, 결제 시스템 등 실무에서 활용되는 핵심 기능을 익힐 수 있으며,
+          이를 통해 전반적인 웹 개발 역량을 강화할 수 있을 것이라 생각했습니다.
+        </p>
+      </div>
+
+      <h2>📌 주요 기능</h2>
+      <ul>
+        <li>사용자 인증 기능: 네이버, 구글, Oauth를 활용한 간편 로그인</li>
+        <li>상품 관리: 판매자가 회원에게 판매할 상품을 관리</li>
+        <li>주문 시스템: 회원이 구매하고자 하는 상품을 판매자로부터 구매</li>
+        <li>결제 시스템: 상품 구매 시 Toss API를 활용한 간편 결제 시스템</li>
+        <li>찜 리스트: 회원이 나중에 구매하고 싶은 상품을 기록해 놓는 기능</li>
+        <li>
+          배송지 관리: 사용자가 원하는 배송지를 추가하고 수정 및 삭제하는 기능
+        </li>
+      </ul>
+
+      <h2>🔗 관련 링크</h2>
+      <div class="link-container">
+        <a href="https://github.com/lgh000322/kdt2024_3_1" target="_blank">
+          <img
+            src="../assets/img/icon/GithubImg.jpg"
+            alt="GitHub"
+            class="icon"
+          />
+          GitHub 링크
+        </a>
+        <a href="https://www.figma.com/design/ftEpiWXpaqrm7tAnvDlCRw/%ED%94%BC%EA%B7%B8%EB%A7%88-%ED%85%8C%EC%8A%A4%ED%8A%B8?node-id=4-2&t=E8TTGzviSdZvhf6n-1" target="_blank">
+          <!-- <img
+          src="../assets/img/icon/GithubImg.jpg"
+            alt="GitHub"
+            class="icon"
+          /> -->
+          Figma 링크
+        </a>
+      </div>
+
+      <h2>📌 개발하며 느낀 점</h2>
+      <div class="feedback-container">
+        <p>
+          웹 쇼핑몰 개발 백엔드를 담당하며 클라이언트와 DB의 통신을 위한 API
+          기능 구현을 맡았습니다. 구현 과정에서 기존에 ERD 관계나 속성이
+          변경됨에 따라 서버 측 쿼리문이라든가 전달 방식을 수정해야 했었습니다.
+          주문내역의 기능을 변경하면서 주문내역을 외래키로 갖는 주문상품 API의
+          기존 기능을 수정해야하는 상황이 생기고 꼬리에 꼬리를 무는 재구현의
+          연속이였습니다. 다행히 도메인별로 패키지를 개별적으로 분리하는 구조를
+          적용했기에 수정 작업이 비교적 수월하게 진행되었습니다. 덕분에 예상보다
+          빠르게 문제를 해결할 수 있었고, 주어진 기한 내에 맡은 역할을 충실히
+          수행할 수 있었습니다. 또한, Git을 적극적으로 활용하여 각자의 브랜치와
+          수정사항을 작업 전에 pull을 미리 받고 확인하며 추후에 문제 될 일이
+          없게 협업하였습니다. Git을 통한 협업과 Spring Boot를 활용한 API 개발
+          경험을 축적할 수 있어 좋은 경험과 배움이였습니다.
+        </p>
+      </div>
+
+      <h2>📊 결과 보고서PDF 보기</h2>
+      <div class="pdf-container">
+        <embed
+          src="../assets/img/portfolio/KDT_3/kdt3차_1팀_완료보고서.hwp.pdf"
+          type="application/pdf"
+        />
+      </div>
+
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+      <!-- portfolio.js 연결 -->
+      <script src="../assets/js/portfolio.js"></script>
+    </div>
+  </body>
+</html>
