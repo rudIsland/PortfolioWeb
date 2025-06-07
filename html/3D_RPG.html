@@ -23,10 +23,10 @@
           <strong>진행 기간:</strong> 2025.3.21 ~ 진행중
         </p>
         <p class="highlight-box">
-          <strong>내 역할:</strong> 전체 게임 제작
+          <strong>내 역할:</strong> 전반적 게임 제작
         </p>
         <p class="highlight-box">
-          <strong>팀원 수:</strong> 1명
+          <strong>팀원 수:</strong> 1명(단독)
         </p>
         <p>
           3D TPS 시점으로 각 스테이지별로 몰려오는 적을 처치하며 레벨업을 하고, </br>
@@ -38,7 +38,9 @@
       <ul>
         <li>🧠 Behavior Tree를 활용한 AI 적</li>
         <li>⚔️ 플레이어의 FreeLook시점과 TargetLook시점으로 시점의 자유와 집중을 도우며 제공</li>
-        <li>📖 현재 스테이지, 스탯들을 자동저장하여 JsonUtility를 통해 이어하기 기능제공</li>
+        <li>📖 현재 스테이지, 스탯들을 저장하여 JsonUtility를 통해 이어하기 기능제공</li>
+        <li>💡 적이 플레이어를 탐지하거나 타겟 지정 시 Rim Light 쉐이더를 동적으로 적용</li>
+        <li>☠️ 캐릭터 사망 시 Dissolve 쉐이더를 활용해 부드럽고 몰입감 있는 소멸 연출 구현</li>
       </ul>
 
       <h2>🔗 관련 링크</h2>
@@ -47,19 +49,19 @@
           <img src="../assets/img/icon/GithubImg.jpg" alt="GitHub" class="icon" />
           GitHub 링크
         </a>
-        <a href="https://lei2812.notion.site/dbd8b6d357e040a8a4b263a3a2352243?v=a0360b83941b46b5a3f22c8a656c2d82" target="_blank">
-          <img src="../assets/img/icon/NotionImg.jpg" alt="Notion" class="icon" />
-          노션 링크
-        </a>
       </div>
 
       <h2>📌 개발하며 느낀 점</h2>
       <div class="feedback-container">
         <p>
-          해당 게임을 제작하며 FSM보다 더 깊고 질있는 AI를 제작할 수 있는 능력을 기를 수 있었습니다.
-          또한, 플레이어는 어떤 씬에서든 단일화된 객체로 존재해야 하므로 싱글톤화 시켜 모든 클래스에서 Instance된 플레이어를 가져오도록 하며,
-          게임 내 구조와 코드 구조를 일치시키도록 하였습니다.
-          이를 통해, 개발간의 헷갈림없이 효율적인 개발코드 구조를 설계하는 능력을 성장시킬 수 있었습니다.
+          FMS 기반의 플레이어를 2가지 상태(Free, Target)를 갖고, 상태 변환 로직 구현과
+          Behavior Tree 구조를 직접 설계하여 AI가 탐지, 추적, 공격, 사망등 조건 기반으로 수행하도록 구현했습니다.<br>
+          적이 탐지, 타겟팅 대상이 될 때에 Rim Light 쉐이더를 동적으로 적용하여 시각적으로 몰입감을 향상시켰고,
+          캐릭터가 처치되면 dissolve 쉐이더를 적용시키며 게임적인 사망 연출을 보일 수 있었습니다.<br>
+          각종 에셋과 파티클 효과를 적용하다보니 FPS 최적화를 위해 카메라의 렌더링 사거리 조절과 그림자 해상도, Light Mode를 Bake시켜
+          정적 오브젝트들의 빛연산을 미리 계산시키는 작업을하며 FPS를 5정도 향상 할 수 있었습니다.<br>
+          머터리얼을 제작하며 렌더링 파이프라인 구조를 이해 할 수 있었으며 그래픽 직군과의 협업 가능성을 볼 수 있었습니다.<br>
+          또한, 이번 개발을 하며 이전까지 만들어온 개발은 속빈 껍데기만 갖춘 개발이라는 것을 느꼈습니다.
         </p>
       </div>
  
@@ -69,16 +71,25 @@
         <div class="portfolio-details-slider swiper" style="background-color: aliceblue">
           <div class="swiper-wrapper align-items-center">
             <div class="swiper-slide">
-              <img src="../assets/img/portfolio/서머너/서머너메인화면이미지.png" alt=""/>
+              <img src="../assets/img/portfolio/3D_RPG/3D_RPG_6.jpg" alt=""/>
             </div>
             <div class="swiper-slide">
-              <img src="../assets/img/portfolio/서머너/스테이지씬.jpg" alt=""/>
+              <img src="../assets/img/portfolio/3D_RPG/3D_RPG_1.jpg" alt=""/>
             </div>
             <div class="swiper-slide">
-              <img src="../assets/img/portfolio/서머너/스토리씬.png" alt=""/>
+              <img src="../assets/img/portfolio/3D_RPG/3D_RPG_2.jpg" alt=""/>
             </div>
             <div class="swiper-slide">
-              <img src="../assets/img/portfolio/서머너/서머너배틀화면이미지.png" alt=""/>
+              <img src="../assets/img/portfolio/3D_RPG/3D_RPG_7.jpg" alt=""/>
+            </div>
+            <div class="swiper-slide">
+              <img src="../assets/img/portfolio/3D_RPG/3D_RPG_3.jpg" alt=""/>
+            </div>
+            <div class="swiper-slide">
+              <img src="../assets/img/portfolio/3D_RPG/3D_RPG_4.jpg" alt=""/>
+            </div>
+            <div class="swiper-slide">
+              <img src="../assets/img/portfolio/3D_RPG/3D_RPG_5.jpg" alt=""/>
             </div>
           </div>
           <div class="swiper-pagination"></div>
